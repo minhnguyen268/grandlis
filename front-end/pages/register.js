@@ -242,7 +242,28 @@ const DangKy = () => {
             <ErrorMessageLabel>{errors.phone ? errors.phone.message : ""}</ErrorMessageLabel>
           </FormControl>
 
-  
+          // <FormControl
+          //   sx={{
+          //     display: "flex",
+          //     flexDirection: "column",
+          //   }}
+          // >
+          //   <Controller
+          //     name="maGioiThieu"
+          //     control={control}
+          //     render={({ field: { ref, ...field } }) => (
+          //       <OutlinedInput
+          //         placeholder="Mã giới thiệu"
+          //         type={"text"}
+          //         size="small"
+          //         fullWidth
+          //         inputRef={ref}
+          //         {...field}
+          //       />
+          //     )}
+          //     defaultValue=""
+          //   />
+          // </FormControl>
 
           <Button type="submit" onClick={handleSubmit(onSubmit)} variant="contained">
             Đăng ký
