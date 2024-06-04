@@ -71,13 +71,12 @@ const DangKy = () => {
   const onSubmit = async (data) => {
     try {
       setSignupStatus("loading");
-      const { account, password, confirmPassword, phone, maGioiThieu } = data;
+      const { account, password, confirmPassword, phone,} = data;
       const result = await AuthService.signUp({
         taiKhoan: account,
         matKhau: password,
         nhapLaiMatKhau: confirmPassword,
         soDienThoai: phone,
-        maGioiThieu: maGioiThieu,
       });
 
       toast.success(result?.data?.message ?? "Đăng ký tài khoản thành công");
@@ -248,22 +247,6 @@ const DangKy = () => {
               flexDirection: "column",
             }}
           >
-            {/* <Controller
-              name="maGioiThieu"
-              control={control}
-              render={({ field: { ref, ...field } }) => (
-                <OutlinedInput
-                  placeholder="Mã giới thiệu"
-                  type={"text"}
-                  size="small"
-                  fullWidth
-                  inputRef={ref}
-                  {...field}
-                />
-              )}
-              defaultValue=""
-            />
-          </FormControl> */}
 
           <Button type="submit" onClick={handleSubmit(onSubmit)} variant="contained">
             Đăng ký
