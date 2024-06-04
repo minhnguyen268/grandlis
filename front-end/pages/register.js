@@ -248,7 +248,7 @@ const DangKy = () => {
               flexDirection: "column",
             }}
           >
-            <Controller
+            {/* <Controller
               name="maGioiThieu"
               control={control}
               render={({ field: { ref, ...field } }) => (
@@ -263,7 +263,7 @@ const DangKy = () => {
               )}
               defaultValue=""
             />
-          </FormControl>
+          </FormControl> */}
 
           <Button type="submit" onClick={handleSubmit(onSubmit)} variant="contained">
             Đăng ký
