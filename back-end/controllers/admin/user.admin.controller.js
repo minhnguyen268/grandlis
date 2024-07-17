@@ -59,7 +59,7 @@ class UserAdminController {
             nguoiDung: userId,
             tienTruoc: findUser.money - moneyUpdate,
             tienSau: findUser.money,
-            noiDung: moneyUpdate > 0 ? `Nhận tiền từ admin` : `Trừ tiền từ admin`,
+            noiDung: moneyUpdate > 0 ? `Nạp tiền vào tài khoản` : `Rút tiền khỏi tài khoản`,
             loaiDeposit: moneyUpdate > 0 ? LOAI_DEPOSIT.NHAN_TIEN : LOAI_DEPOSIT.TRU_TIEN,
           },
           options: {
@@ -127,7 +127,7 @@ class UserAdminController {
     global._io.to(`${updateUser.taiKhoan}`).emit("sign-out");
 
     return new OkResponse({
-      message: "Update mật khẩu thành công",
+      message: "Cập nhập mật khẩu thành công",
       metadata: {
         userId,
         newPassword,
@@ -157,7 +157,7 @@ class UserAdminController {
     }
 
     return new OkResponse({
-      message: "Update mật khẩu rút tiền thành công",
+      message: "Cập nhập mật khẩu rút tiền thành công",
       metadata: {
         userId,
         newPassword,
