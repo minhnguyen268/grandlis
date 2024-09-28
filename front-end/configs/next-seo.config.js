@@ -27,7 +27,7 @@ const NextSeoConfig = {
     description: "Keno SandSGP - Hệ thống chọn số may mắn và dễ dàng. Nhanh chóng, uy tín và rộng khắp",
     images: [
       {
-        url: "@/public/assets/images/bannerimg.jpg",
+        url: "https://i.imgur.com/G4mubC5.jpeg",
         width: 1200,
         height: 628,
       },
