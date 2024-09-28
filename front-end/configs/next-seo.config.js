@@ -23,11 +23,11 @@ const NextSeoConfig = {
     type: "website",
     locale: "vi_VN",
     url: process.env.NEXTAUTH_URL,
-    siteName: "Xổ số SandSGP",
-    description: "Xổ số SandSGP",
+    siteName: "Keno số tự chọn SandSGP",
+    description: "Keno SandSGP - Hệ thống chọn số may mắn và dễ dàng. Nhanh chóng, uy tín và rộng khắp",
     images: [
       {
-        url: "https://i.ibb.co/0cQnxF3/bannerimg.jpg",
+        url: "@/public/assets/images/bannerimg.jpg",
         width: 1200,
         height: 628,
       },
